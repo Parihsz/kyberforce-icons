@@ -1,5 +1,4 @@
 /node_modules
 *.vsix
 /test
-/dist
 .DS_Store
