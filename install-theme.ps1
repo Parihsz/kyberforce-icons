@@ -1,6 +1,8 @@
+$publisher = "parihsz"
 $themeName = "kyberforce-icon-theme"
+$extensionFolder = "$publisher.$themeName"
 $sourcePath = (Get-Location).Path
-$targetPath = "$env:USERPROFILE\.vscode\extensions\$themeName"
+$targetPath = "$env:USERPROFILE\.vscode\extensions\$extensionFolder"
 if (Test-Path $targetPath){
     Write-Host "Removing existing theme installation at $targetPath.."
     Remove-Item -Recurse -Force $targetPath
